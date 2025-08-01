@@ -1,4 +1,4 @@
-!pip install streamlit
+pip install streamlit
 import os
 import streamlit as st
 import pandas as pd
