@@ -74,7 +74,7 @@ def evaluate_model(y_test, y_pred):
     return {
         "R2 Score": r2_score(y_test, y_pred),
         "MAE": mean_absolute_error(y_test, y_pred),
-        "RMSE": mean_squared_error(y_test, y_pred, squared=False)
+        "RMSE": mean_squared_error(y_test, y_pred) ** 0.5
     }
 
 def forecast_with_prophet(df):
